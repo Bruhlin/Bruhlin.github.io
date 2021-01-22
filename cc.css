@@ -1,0 +1,186 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#imgtop {
+    background-image: url(wetransfer-740228/VetPet/pexels-helena-lopes-1378849.jpg);
+    height: 500px;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#imgtop2 {
+    background-image: url(wetransfer-740228/VetPet/pexels-ellie-burgin-3362697.jpg);
+    height: 500px;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#logo {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 150px;
+}
+
+a {
+    color: white;
+}
+
+.navbar {
+    color: transparent;
+}
+
+div [class^="col-"] {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.card {
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.card-title {
+    font-size: 15px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.card-title i {
+    font-size: 15px;
+    transition: 1s;
+    cursor: pointer;
+    color: #ffa710
+}
+
+.card-title i:hover {
+    transform: scale(1.25) rotate(100deg);
+    color: #18d4ca;
+
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card-text {
+    height: 80px;
+}
+
+.card::before,
+.card::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: scale3d(0, 0, 1);
+    transition: transform .3s ease-out 0s;
+    background: rgba(255, 255, 255, 0.1);
+    content: '';
+    pointer-events: none;
+}
+
+.card::before {
+    transform-origin: left top;
+}
+
+.card::after {
+    transform-origin: right bottom;
+}
+
+.card:hover::before,
+.card:hover::after,
+.card:focus::before,
+.card:focus::after {
+    transform: scale3d(1, 1, 1);
+}
+
+.card-title {
+    text-align: center;
+    font-size: 20px;
+
+}
+
+.card-text {
+    text-align: center;
+    font-size: 17px;
+}
+
+.rounded-lg {
+    border-radius: 1rem;
+  }
+  
+  .nav-pills .nav-link {
+    color: #555;
+  }
+  
+  .nav-pills .nav-link.active {
+    color: #fff;
+  }
+
+
+
+  .pagination-outer{ text-align: center; }
+  .pagination{
+      font-family: 'Work Sans', sans-serif;
+      display: inline-flex;
+  }
+  .pagination li a.page-link{
+      color: #555;
+      background-color: #e7e7e7;
+      font-size: 24px;
+      font-weight: 600;
+      padding: 6px 15px;
+      margin: 0 7px;
+      border: none;
+      overflow: hidden;
+      position: relative;
+      z-index: 1;
+  }
+  .pagination li.active a.page-link,
+  .pagination li a.page-link:hover,
+  .pagination li.active a.page-link:hover{
+      color: #fff;
+      background-color: transparent;
+      text-shadow: 0 0 2px #000;
+  }
+  .pagination li a.page-link:before,
+  .pagination li a.page-link:after{
+      content: '';
+      background-color: rgb(204, 130, 33);;
+      height: 75%;
+      width: 75%;
+      opacity: 0;
+      transform: translateX(-50%) translateY(-50%);
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      z-index: -1;
+      transition: all 0.3s ease 0s;
+  }
+  .pagination li.active a.page-link:before,
+  .pagination li a.page-link:hover:before{
+      opacity: 1;
+      left: 43%;
+      top: 43%;
+  }
+  .pagination li.active a.page-link:after,
+  .pagination li a.page-link:hover:after{
+      opacity: 1;
+      left: 57%;
+      top: 57%;
+  }
+  @media only screen and (max-width: 480px){
+      .pagination{ display: block; }
+      .pagination li{
+          display: inline-block;
+          margin: 0 0 5px;
+      }
+  }
+  

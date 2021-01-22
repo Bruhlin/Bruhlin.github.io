@@ -1,0 +1,437 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="cc.css">
+
+</head>
+
+<body>
+    <div class="container-fluid" id="imgtop">
+        <nav class="navbar navbar-expand-lg">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><img id="logo" src="wetransfer-740228/VetPet/Group 285.png" alt=""
+                    srcset=""></a>
+
+            <div class="collapse navbar-collapse " id="navbarTogglerDemo03">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-right active">
+                        <a class="nav-link" href="aboutus.html">Sobre Nós <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-right">
+                        <a class="nav-link" href="biblioteca.html">Biblioteca</a>
+                    </li>
+                    <li class="nav-right">
+                        <a class="nav-link" href="consultas.html">Consultas</a>
+                    </li>
+                    <li class="nav-right">
+                        <a class="nav-link" href="loja.html">Loja</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container" style="margin-top: 500px; height: 100vh;">
+            <div class="container">
+                <span style="font-size: 17px;">Consultas </span> <i class="fa fa-arrow-right"
+                    style="color: #ffa710;"></i> <span>Marcações</span>
+                <br><br><br>
+                <span style="font-size: 23px;">Consultas Presenciais:</span>
+                <div class="card-group">
+                    <div class="card"
+                        style="max-width: 33.33333%; margin-top: 20px; margin-left: 20px; border: 1px solid rgb(136, 136, 136); background-color: rgb(204, 130, 33);">
+                        <div class="card-body">
+                            <img src="wetransfer-740228/VetPet/pexels-gratisography-2007.jpg" alt=""
+                                style="max-width: 80px; max-height: 80px; float: right;">
+                            <h5 class="card-title" style="text-align: left; margin-top: 50px; color: white;">Amanhã</h5>
+                            <br><br>
+                            <p class="card-text" style="text-align: justify; max-height: 30px; ">
+                                <small
+                                    style="margin-top: 160px; color: white;">22/01/2021&emsp;&emsp;&emsp;&emsp;&emsp;Com
+                                    Dr.Jorge
+                                    Veloso</small>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card" id="showme1"
+                        style="max-width: 33.33333%; margin-top: 20px; margin-left: 20px; border: 1px solid rgb(136, 136, 136); background-color: rgb(204, 130, 33); display: none;">
+                        <div class="card-body">
+                            <img src="wetransfer-740228/VetPet/pexels-dominika-roseclay-2691779.jpg" alt=""
+                                style="max-width: 80px; max-height: 80px; float: right;">
+                            <h5 class="card-title" style="text-align: left; color: white; margin-top: 50px;">In 9 days!
+                            </h5>
+                            <br><br>
+                            <p class="card-text" style="text-align: justify; max-height: 30px; ">
+                                <small
+                                    style="margin-top: 160px; color: white;">28/01/2021&emsp;&emsp;&emsp;&emsp;&emsp;Com
+                                    Dr. <i style="font-size: 10px;">(ainda não determinado)</i></small>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card" id="addConsultaPresencial"
+                        style="max-width: 20%; margin-top: 20px; margin-left: 20px; border: 1px solid rgb(136, 136, 136);">
+                        <div class="card-body" style="text-align: center;">
+                            <img src="cruz-removebg-preview.png" alt="" style="max-width: 175px; max-height: 200px;">
+                            <br>
+                            <small style="color: rgb(75, 75, 75);">Clique para marcar uma consulta.</small>
+                        </div>
+
+                    </div>
+                </div>
+                <br><br><br><br>
+                <span style="font-size: 23px;">Consultas Online:</span>
+                <!-- outro -->
+                <div class="card-group">
+                    <div class="card"
+                        style="max-width: 33.33333%; margin-top: 20px; margin-left: 20px; border: 1px solid rgb(136, 136, 136); background-color: rgb(204, 130, 33);">
+                        <div class="card-body">
+                            <img src="wetransfer-740228/VetPet/pexels-krysten-merriman-20787.jpg" alt=""
+                                style="max-width: 80px; max-height: 80px; float: right;">
+                            <h5 class="card-title" style="text-align: left; margin-top: 50px; color: white;">In 3 days!
+                            </h5>
+                            <br><br>
+                            <p class="card-text" style="text-align: justify; max-height: 30px; ">
+                                <small
+                                    style="margin-top: 160px; color: white;">22/01/2021&emsp;&emsp;&emsp;&emsp;&emsp;Com
+                                    Dr.Paulo Barros</small>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card" id="showme2"
+                        style="max-width: 33.33333%; margin-top: 20px; margin-left: 20px; border: 1px solid rgb(136, 136, 136); background-color: rgb(204, 130, 33); display: none;">
+                        <div class="card-body">
+                            <img src="wetransfer-740228/VetPet/pexels-pixabay-62289.jpg" alt=""
+                                style="max-width: 80px; max-height: 80px; float: right;">
+                            <h5 class="card-title" style="text-align: left; color: white; margin-top: 50px;">In 12 days!
+                            </h5>
+                            <br><br>
+                            <p class="card-text" style="text-align: justify; max-height: 30px; ">
+                                <small
+                                    style="margin-top: 160px; color: white;">31/01/2021&emsp;&emsp;&emsp;&emsp;&emsp;Com
+                                    Dr. <i style="font-size: 10px;">(ainda não determinado)</i></small>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card" id="addConsultaOnline"
+                        style="max-width: 20%; margin-top: 20px; margin-left: 20px; border: 1px solid rgb(136, 136, 136);">
+                        <div class="card-body" style="text-align: center;">
+                            <img src="cruz-removebg-preview.png" alt="" style="max-width: 175px; max-height: 200px;">
+                            <br>
+                            <small style="color: rgb(75, 75, 75);">Clique para marcar uma consulta.</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
+                    aria-labelledby="myLargeModalLabel" aria-hidden="true" id="modalPresencial">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <!-- formulario-->
+                            <div class="formulario" style="padding-top: 15px;">
+                                <div class="container">
+                                    <h1 class="border-bottom py-2 mb-2" style="text-align: center; ">
+                                        Formulário para Marcação de consulta presencial!</h1>
+                                    <form method="POST" id="presencial">
+                                        <div class="row form-group" style="margin-top:25px; margin-bottom:25px;">
+                                            <div class="col-md-4" style="margin-left: 10px;">Consulta para qual animal?
+                                            </div>
+                                            <div class="col-md-8" style="margin-top: 10px;">
+                                                <div class="form-check">
+                                                    <div class="btn-group" role="group"
+                                                        aria-label="Basic radio toggle button group">
+                                                        <input type="radio" class="btn-check" name="btnradio"
+                                                            id="btnradio1" autocomplete="off">
+                                                        <label class="btn btn-outline-primary"
+                                                            for="btnradio1">Bolinhas</label>
+                                                        <input type="radio" class="btn-check" name="btnradio"
+                                                            id="btnradio2" autocomplete="off">
+                                                        <label class="btn btn-outline-primary"
+                                                            for="btnradio2">Sombra</label>
+                                                        <input type="radio" class="btn-check" name="btnradio"
+                                                            id="btnradio3" autocomplete="off">
+                                                        <label class="btn btn-outline-primary"
+                                                            for="btnradio3">Ambos</label>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="exampleInputBirthDate1" class="col-sm-3 col-form-label"
+                                                style="margin-left: 10px;">Dia da consulta<small
+                                                    id="asterisco1">*</small></label>
+                                            <div class="col-sm-9" style="margin-left: 10px;">
+                                                <input type="text" readonly class="form-control"
+                                                    id="exampleInputBirthDate1" placeholder="Dia da consulta..">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group"
+                                            style="margin-bottom: 30px; margin-top: 30px;  text-align: left;">
+                                            <label for="morada" class="col-sm-2 col-form-label">Comentários</label>
+                                            <div class="col-sm-10">
+                                                <textarea class="form-control" name="morada" id="morada" rows="3"
+                                                    placeholder="Comentários que ache relevantes fazer..."></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="row form-group" style="margin-bottom: 10px; margin-left: 50px;">
+                                            <div class="col-md-10 offset-md-2">
+                                                <input type="submit" name="submitBtn" value="Enviar"
+                                                    class="btn btn-primary" />
+                                                <input type="reset" name="resetBtn" value="Limpar"
+                                                    class="btn btn-secondary" />
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <span
+                                        style="text-align: center; margin-top: 20px; margin-bottom: 10px; color: rgba(32, 32, 32, 0.747);">O
+                                        pagamento referente às consultas presenciais é feito após a consulta,
+                                        presencialmente.</span>
+                                    <br>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
+                    aria-labelledby="myLargeModalLabel" aria-hidden="true" id="modalOnline">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <!-- formulario-->
+                            <div class="formulario" style="padding-top: 15px;">
+                                <div class="container">
+                                    <h1 class="border-bottom py-2 mb-2" style="text-align: center; ">
+                                        Formulário para Marcação de consulta Online!</h1>
+                                    <form method="POST" id="online">
+                                        <div class="container">
+                                            <div class="row form-group" style="margin-top:25px; ">
+                                                <div class="col-md-4" style="margin-left: 10px;">Consulta para qual
+                                                    animal?
+                                                </div>
+                                                <div class="col-md-8" style="margin-top: 10px;">
+                                                    <div class="form-check">
+                                                        <div class="btn-group" role="group"
+                                                            aria-label="Basic radio toggle button group">
+                                                            <input type="radio" class="btn-check" name="btnradio1"
+                                                                id="btnradio12" autocomplete="off">
+                                                            <label class="btn btn-outline-primary"
+                                                                for="btnradio12">Bolinhas</label>
+                                                            <input type="radio" class="btn-check" name="btnradio1"
+                                                                id="btnradio22" autocomplete="off">
+                                                            <label class="btn btn-outline-primary"
+                                                                for="btnradio22">Sombra</label>
+                                                            <input type="radio" class="btn-check" name="btnradio1"
+                                                                id="btnradio32" autocomplete="off">
+                                                            <label class="btn btn-outline-primary"
+                                                                for="btnradio32">Ambos</label>
+                                                        </div>
+                                                    </div>
+                                                    <br>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="exampleInputBirthDate2" class="col-sm-3 col-form-label"
+                                                    style="margin-left: 10px;">Dia da consulta<small
+                                                        id="asterisco">*</small></label>
+                                                <br>
+                                                <div class="col-sm-9" style="margin-left: 10px; margin-top: 20px;">
+                                                    <input type="text" readonly class="form-control"
+                                                        id="exampleInputBirthDate2" placeholder="Dia da consulta..">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <br><br>
+                                        <div class="container">
+                                            <nav class="justify-content-center">
+                                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                                    <a class="nav-link active" id="nav-home-tab" data-bs-toggle="tab"
+                                                        style="background-color:  rgb(204, 130, 33); color: white;"
+                                                        href="#nav-home" role="tab" aria-controls="nav-home"
+                                                        aria-selected="true"><i class="fa fa-credit-card"></i>
+                                                        Credit Card</a>
+                                                    <a class="nav-link"
+                                                        style="background-color:  rgb(204, 130, 33); color: white; margin-left: 20px;"
+                                                        id="nav-profile-tab" data-bs-toggle="tab" href="#paypal"
+                                                        role="tab" aria-controls="nav-profile" aria-selected="false"><i
+                                                            class="fa fa-paypal"></i>
+                                                        Paypal</a>
+                                                    <a class="nav-link"
+                                                        style="background-color:  rgb(204, 130, 33); color: white; margin-left: 20px;"
+                                                        id="nav-contact-tab" data-bs-toggle="tab" href="#bank   "
+                                                        role="tab" aria-controls="nav-contact" aria-selected="false"><i
+                                                            class="fa fa-university"></i>
+                                                        Bank Transfer</a>
+                                                </div>
+                                            </nav>
+                                            <div class="tab-content" id="nav-tabContent">
+                                                <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                                                    aria-labelledby="nav-home-tab">
+                                                    <div id="menu1" class="tab-pane fade show active">
+                                                        <form role="form">
+                                                            <div class="form-group">
+                                                                <label for="username" style="margin-top: 20px;">Full
+                                                                    name (on the
+                                                                    card)</label>
+                                                                <input type="text" name="username"
+                                                                    placeholder="Jason Doe" required
+                                                                    class="form-control">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="cardNumber" style="margin-top: 20px;">Card
+                                                                    number</label>
+                                                                <div class="input-group">
+                                                                    <input type="text" name="cardNumber"
+                                                                        placeholder="Your card number"
+                                                                        class="form-control" required>
+                                                                    <div class="input-group-append">
+                                                                        <span class="input-group-text text-muted">
+                                                                            <i class="fa fa-cc-visa mx-1"
+                                                                                style="height: 30px; margin-top: 5px;"></i>
+                                                                            <i class="fa fa-cc-amex mx-1"
+                                                                                style="height: 30px;margin-top: 5px;"></i>
+                                                                            <i class="fa fa-cc-mastercard mx-1"
+                                                                                style="height: 30px;margin-top: 5px;"></i>
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="container">
+                                                                <div class="row">
+                                                                    <div class="col-sm-8">
+                                                                        <div class="form-group">
+                                                                            <label style="margin-top: 20px;"><span
+                                                                                    class="hidden-xs"
+                                                                                    style="margin-top: 20px;">Expiration</span></label>
+                                                                            <div class="input-group">
+                                                                                <input type="number" placeholder="MM"
+                                                                                    name="" class="form-control"
+                                                                                    required>
+                                                                                <input type="number" placeholder="YY"
+                                                                                    name="" class="form-control"
+                                                                                    required>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-sm-4">
+                                                                        <div class="form-group mb-4">
+                                                                            <label data-toggle="tooltip"
+                                                                                style="margin-top: 20px;"
+                                                                                title="Three-digits code on the back of your card">CVV
+                                                                                <i class="fa fa-question-circle"></i>
+                                                                            </label>
+                                                                            <input type="text" required
+                                                                                class="form-control">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                                <div id="paypal" class="tab-pane fade">
+                                                    <p>Paypal is easiest way to pay online</p>
+                                                    <p>
+                                                        <a href="https://www.paypal.com/pt/signin" target="_blank"><button type="button" class="btn btn-primary rounded-pill"><i
+                                                                class="fa fa-paypal mr-2"></i> Log into my
+                                                            Paypal</button></a>
+                                                    </p>
+                                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur
+                                                        adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                                                        dolore magna aliqua.
+                                                    </p>
+                                                </div>
+                                                <div id="bank" class="tab-pane fade">
+                                                    <h6>Bank account details</h6>
+                                                    <dl>
+                                                        <dt>Bank</dt>
+                                                        <dd> THE WORLD BANK</dd>
+                                                    </dl>
+                                                    <dl>
+                                                        <dt>Account number</dt>
+                                                        <dd>7775877975</dd>
+                                                    </dl>
+                                                    <dl>
+                                                        <dt>IBAN</dt>
+                                                        <dd>CZ7775877975656</dd>
+                                                    </dl>
+                                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur
+                                                        adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                                                        dolore magna aliqua.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row form-group" style="margin-bottom: 10px; margin-left: 50px;">
+                                            <div class="col-md-10 offset-md-2">
+                                                <input type="submit" name="submitBtn2" value="Enviar"
+                                                    class="btn btn-primary" id="btn2sub" />
+                                                <input type="reset" name="resetBtn2" value="Limpar"
+                                                    class="btn btn-secondary" />
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" id="modalErros1"
+                        style="display: none;">
+                        <div class="modal-dialog">
+                            <div class="modal-content" style="background-color: rgb(204, 130, 33);">
+                                <div class="formulario" style="padding-top: 15px;">
+                                    <div class="container">
+                                        <p class="border-bottom py-2 mb-2" style="text-align: center; color: white; ">
+                                            O formulário não foi preenchido corretamente!<br>Necessita de selecionar uma
+                                            das
+                                            opções, e informar o dia da consulta.<br> Por favor verifique outra vez.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" id="modalErros2"
+                    style="display: none;">
+                    <div class="modal-dialog">
+                        <div class="modal-content" style="background-color: rgb(204, 130, 33);">
+                            <div class="formulario" style="padding-top: 15px;">
+                                <div class="container">
+                                    <p class="border-bottom py-2 mb-2" style="text-align: center; color: white; ">
+                                        O formulário não foi preenchido corretamente!<br>Necessita de selecionar uma
+                                        das
+                                        opções, informar o dia da consulta e preencher os dados de pagamento corretamente.<br> Por favor verifique outra vez.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                <script src="https://code.jquery.com/jquery-3.5.1.js"
+                    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+                <!-- JavaScript Bundle with Popper -->
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+                    crossorigin="anonymous"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+                <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+                    integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+                <script src="app.js"></script>
+                <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.js"></script>
+                <script src="http://ajax.aspnetcdn.com/ajax/mvc/3.0/jquery.validate.unobtrusive.min.js"></script>
+</body>
+
+</html>

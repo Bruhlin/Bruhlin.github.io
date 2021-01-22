@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="formulario" style="padding-top: 15px;">
+        <div class="container">
+            <h1 class="border-bottom py-2 mb-2" style="text-align: center; ">
+                Formulário para Orçamento de Festa!</h1>
+            <form action="https://formspree.io/f/moqppwnz" method="POST">
+                <div class="row form-group" style="margin-top:25px; margin-bottom:25px;">
+                    <label for="Nome" class="col-md-2 col-form-label">Nome</label>
+                    <div class="col-md-10">
+                        <input type="text" name="Nome" id="Nome" class="form-control" placeholder="Nome" />
+                    </div>
+                </div>
+                <div class="row form-group" style="margin-top:25px; margin-bottom:25px;">
+                    <label for="Morada" class="col-md-2 col-form-label">Morada</label>
+                    <div class="col-md-10">
+                        <textarea name="Morada" id="Morada" class="form-control" rows="1"
+                            placeholder="Morada"></textarea>
+                    </div>
+                </div>
+                <div class="row form-group" style="margin-top:25px; margin-bottom:25px;">
+                    <label class="col-md-2 col-form-label">e-mail</label>
+                    <div class="col-md-10">
+                        <input type="text" name="_replyto" id="Mail" class="form-control" placeholder="e-mail"
+                            required />
+                    </div>
+                </div>
+                <div class="row form-group" style="margin-top:25px; margin-bottom:25px;">
+                    <div class="col-md-2">Qual </div>
+                    <div class="col-md-10">
+                        <div class="form-check">
+                            <div class="btn-group-vertical" role="group" aria-label="Basic checkbox toggle button group">
+                                <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                                <label class="btn btn-outline-primary" for="btncheck1"> Bolinhas </label>
+                              
+                                <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                                <label class="btn btn-outline-primary" for="btncheck2"> Sombra </label>
+                              
+                                <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+                                <label class="btn btn-outline-primary" for="btncheck3"> Ambos </label>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-md-10 offset-md-2">
+                        <input type="submit" name="submitBtn" value="Enviar" class="btn btn-primary"
+                            onclick="return validate()" />
+                        <input type="reset" name="resetBtn" value="Limpar" class="btn btn-secondary" />
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
